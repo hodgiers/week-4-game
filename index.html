@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Crystal Collector</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<!-- Big box for title via jumbotron -->
+
+		<div class='jumbotron' style='background-color: blue; color: white;'>
+			<div class='container'>
+				<h1 class='text-center'><strong>Crystal Collector</strong></h1>
+			</div>
+		</div>
+
+
+<!-- RMain Row for all the content -->
+	<div class='row'>
+
+<!-- Container for Instructions-->
+		<div class='col-lg-12'>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Instructions</h2>
+				</div>
+
+				<div class="panel-body">
+					<p>You'll be shown a random number at the start of the game along with four crystals.<br> 
+					Each one, when clicked will add a certain amount of points to your 'total score'.<br>
+					You will not know the value of the crystal until clicked on.
+					<br>
+					You win by determining the value of each crystal and clicking them so that your 'total score' is equal to the random number displayed at the start of each game.<br> 
+					If your guesses puts you over the random number, you lose (think Blackjack).<br>
+					Once you've won or lost the value of the crystals is randomized and a new, random number to guess is shown.</p> 
+				</div>
+			</div>			
+		</div>
+	</div>
+<!-- END THIS SECTION-->
+
+<!-- Target Score and Player Score-->
+
+	<div class='row'>
+<!-- Target Score -->
+		<div class='col-lg-3'>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Target Score</h2>
+				</div>
+				<div class="panel-body" id='targetScore'>
+					<h3></h3>
+				</div>
+			</div>
+
+		</div>
+
+
+<!-- Player Score -->
+		<div class='col-lg-3'>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Your Score</h2>
+				</div>
+				<div class="panel-body" id='yourScore'>
+					<h3></h3>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+<!-- END THIS ROW-->
+
+<!-- BEGIN: Clickable Crystals -->
+	<div class='row'>
+<!-- Images of Crystals -->
+		<div class='col-lg-6'>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Crystals</h2>
+				</div>
+				<div class="panel-body text-center">
+					<img src="assets/images/blue.png" alt="Blue Crystal" 
+					id="blue">
+					<img src="assets/images/green.png" alt="Green Crystal" 
+					id="green">
+					<img src="assets/images/red.png" alt="Red Crystal" 
+					id="red">
+					<img src="assets/images/yellow.png" alt="Yellow Crystal" 
+					id="yellow">
+				</div>
+			</div>
+		</div>
+
+	</div>
+<!-- END THIS ROW-->
+
+<!-- BEGIN: Win and Loss Counter -->
+	<div class='row'>
+<!-- Wins -->
+		<div class='col-lg-6'>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Wins</h2>
+				</div>
+				<div class="panel-body text-center" id='winCount'>
+					<h3>0</h3>
+				</div>
+			</div>
+
+		</div>
+
+<!-- Losses -->
+		<div class='col-lg-6'>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Losses</h2>
+				</div>
+				<div class="panel-body text-center" id='lossCount'>
+					<h3>0</h3>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<!-- END THIS ROW-->
+
+<!-- BEGIN: jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- BEGIN: Javscript -->
+<script src='assets/javascript/javascript.js'></script>
+	
+</body>
+</html>
